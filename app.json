@@ -1,0 +1,45 @@
+{
+  "expo": {
+    "name": "Snapchat auf Wish",
+    "slug": "rueckblick-expo",
+    "scheme": "rueckblick",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.rueckblick.snapchataufwish"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-video",
+      "expo-image",
+      "expo-dev-client",
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Für Fotos und Videos in der App.",
+          "microphonePermission": "Für den Ton bei Videos."
+        }
+      ],
+      [
+        "expo-media-library",
+        {
+          "photosPermission": "Um deine Flashbacks und Fotos anzuzeigen.",
+          "savePhotosPermission": "Um Fotos und Videos im Album Snapchat zu speichern."
+        }
+      ]
+    ]
+  }
+}
